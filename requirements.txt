@@ -1,0 +1,8 @@
+piprepo==0.1.1
+setuptools==0.9.8
+# ansible==2.7.9
+ansible==2.8.0
+docker==3.7.2
+docker-compose==1.24.0
+pyOpenSSL==19.0.0
+python-gitlab==1.8.0
