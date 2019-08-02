@@ -15,6 +15,14 @@ update_configs:
           # Wildcards match unlimited arbitrary characters (or none)
           dependency_name: "docker*"
 
+  - package_manager: "python"
+    directory: "/"
+    update_schedule: "live"
+    automerged_updates:
+      - match:
+          # Wildcards match unlimited arbitrary characters (or none)
+          dependency_name: "*"
+
   - package_manager: "docker"
     directory: "/elastalert"
     update_schedule: "daily"
