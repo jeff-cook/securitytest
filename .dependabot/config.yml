@@ -24,3 +24,6 @@ update_configs:
     - match:
         # Wildcards match unlimited arbitrary characters (or none)
         dependency_name: "rspec*"
+    - match:
+        # Wildcards match unlimited arbitrary characters (or none)
+        dependency_name: "docker*"
