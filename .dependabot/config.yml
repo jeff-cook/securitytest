@@ -7,6 +7,13 @@ update_configs:
   - package_manager: "ruby:bundler"
     directory: "/"
     update_schedule: "live"
+    automerged_updates:
+      - match:
+          # Wildcards match unlimited arbitrary characters (or none)
+          dependency_name: "rspec*"
+      - match:
+          # Wildcards match unlimited arbitrary characters (or none)
+          dependency_name: "docker*"
 
   - package_manager: "docker"
     directory: "/elastalert"
@@ -19,11 +26,3 @@ update_configs:
   - package_manager: "docker"
     directory: "/kibana"
     update_schedule: "daily"
-
-  automerged_updates:
-    - match:
-        # Wildcards match unlimited arbitrary characters (or none)
-        dependency_name: "rspec*"
-    - match:
-        # Wildcards match unlimited arbitrary characters (or none)
-        dependency_name: "docker*"
