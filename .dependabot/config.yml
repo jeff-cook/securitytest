@@ -1,0 +1,22 @@
+# https://dependabot.com/docs/config-file/
+
+version: 1
+update_configs:
+  # Update your Gemfile (& lockfiles) as soon as
+  # new versions are published to the RubyGems registry
+  - package_manager: "docker"
+    directory: "/elastalert"
+    update_schedule: "daily"
+
+  - package_manager: "docker"
+    directory: "/elasticsearch"
+    update_schedule: "daily"
+
+  - package_manager: "docker"
+    directory: "/kibana"
+    update_schedule: "daily"
+
+  automerged_updates:
+    - match:
+        # Wildcards match unlimited arbitrary characters (or none)
+        dependency_name: "rspec*"
