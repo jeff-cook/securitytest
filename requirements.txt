@@ -5,8 +5,8 @@ ansible==2.9.6
 docker==4.2.0
 docker-compose==1.25.4
 pyOpenSSL==19.1.0
-# python-gitlab==2.1.2
+# python-gitlab==2.2.0
 
-python-gitlab==2.1.2
+python-gitlab==2.2.0
 PyYAML==5.3.1
 boolean==1.1.0
