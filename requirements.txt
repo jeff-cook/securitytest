@@ -1,5 +1,5 @@
 piprepo==0.1.3
-setuptools==51.1.0.post20201221
+setuptools==51.1.1
 # ansible==2.7.9
 ansible==2.10.4
 docker==4.4.1
