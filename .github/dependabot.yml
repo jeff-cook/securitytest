@@ -1,0 +1,53 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/elastalert"
+  schedule:
+    interval: daily
+    time: "16:15"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
+  directory: "/elasticsearch"
+  schedule:
+    interval: daily
+    time: "16:15"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: elasticsearch/elasticsearch
+    versions:
+    - 7.10.2
+    - 7.11.0
+    - 7.11.1
+    - 7.11.2
+    - 7.12.0
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "16:15"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
+  directory: "/kibana"
+  schedule:
+    interval: daily
+    time: "16:15"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: kibana/kibana
+    versions:
+    - 7.10.2
+    - 7.11.0
+    - 7.11.1
+    - 7.11.2
+    - 7.12.0
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "16:15"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
