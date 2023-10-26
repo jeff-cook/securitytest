@@ -4,7 +4,7 @@ setuptools==57.4.0
 ansible==4.3.0
 docker==5.0.0
 docker-compose==1.29.2
-pyOpenSSL==20.0.1
+pyOpenSSL==23.3.0
 # python-gitlab==2.10.0
 
 python-gitlab==2.10.0
